@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .grid{
+      background-color: #F0F1EC;
+      width: 721px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 401px;
+      grid-template-rows: 1fr 285px;
+      grid-auto-rows: 20px;
+    }
+    .grid1{
+      background-color: #E72F24;
+      border-right: solid 9px black;
+      border-bottom: solid 9px black;
+    }
+    .grid2{
+      border-bottom: solid 9px black;
+    }
+    .grid3{
+      border-right: solid 9px black;
+      border-bottom: solid 9px black;
+    }
+    .grid4{
+      display: grid;
+      grid-template-columns: 351px 50px;
+      
+    }
+    .grid4a{
+      background-color: #F0F1EC;
+      border-right: solid 9px black;
+      border-bottom: solid 9px black;
+    }
+    .grid4b{
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px 155px;
+    }
+    .grid4ba{
+      background-color: #004592;
+      border-bottom: solid 10px black;
+    }
+    .grid5{
+      border-right: solid 9px black;
+    }
+    .grid6{
+      display: grid;
+      grid-template-columns: 198px 153px;
+    }
+    .grid6a{
+      background-color: #F9D01E;
+    }
+    .grid6b{
+      background-color: black;
+      border-right: solid 9px black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid">
+    <div class="grid1"></div>
+    <div class="grid2"></div>
+    <div class="grid3"></div>
+    <div class="grid4">
+      <div class="grid4a"></div>
+      <div class="grid4b">
+        <div class="grid4ba"></div>
+      </div>
+    </div>
+    <div class="grid5"></div>
+    <div class="grid6">
+      <div class="grid6a"></div>
+      <div class="grid6b"></div>
+    </div>
+    
+  </div>
+</body>
+
+</html>
